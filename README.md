@@ -1,1 +1,217 @@
-# Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc Realties Private Limited</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x800?text=Marc+Realties+Luxury+Homes') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: 700;
+      color: gold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 51, 0.8);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 15px;
+      color: #0055a5;
+    }
+
+    .project-card p {
+      margin: 0 15px 15px;
+    }
+
+    .testimonial {
+      background: #003366;
+      color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .testimonial p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .cta {
+      background: gold;
+      color: #003366;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      background: #003366;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #0055a5;
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Marc Realties Pvt. Ltd.</h1>
+    <p>Crafting Affordable Homes Today. Creating Luxurious Living for Tomorrow.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">Marc Realties Private Limited combines affordability and luxury in real estate. Our commitment is to deliver projects that offer excellent value and modern living, while setting the stage for upscale developments in the future. Trust, transparency, and quality define everything we build.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200?text=Heropur+Heights" alt="Heropur Heights">
+        <h3>Heropur Heights</h3>
+        <p>192 premium yet affordable apartments in Heropur, Raipur. Launch price starting ₹3000/sqft. Book now for exclusive pre-launch offers!</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200?text=Raipur+Residency" alt="Raipur Residency">
+        <h3>Raipur Residency</h3>
+        <p>Modern residential community featuring spacious 2BHK and 3BHK homes with future-ready amenities. Built with excellence and on-time delivery.</p>
+      </div>
+      <!-- Add more project cards if needed -->
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Marc Realties helped us own our dream home at an unbelievable price. The quality and service are exceptional. We trust them completely!"</p>
+      <p>- Ramesh K., Raipur</p>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Ready to Find Your Dream Home?</h2>
+    <p>Contact Marc Realties today and take the first step toward a brighter future. Limited pre-launch offers available.</p>
+    <a href="mailto:info@marcrealties.com">Email Us</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Marc Realties Private Limited. All rights reserved.
+  </footer>
+
+</body>
+</html>
